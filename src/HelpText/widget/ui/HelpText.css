@@ -1,0 +1,78 @@
+.HelpTextTrigger {
+	background-image : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9oDDAw0HaMxNssAAAKiSURBVDjLxZNNaFRnFIafe3MnERJMTFIzyQgxahkwggYURbRuKiKIKEGEaEwL3XThRly7EBELrip04UL8Q0SZRReioCUtahDRNuKo8a+xqebH0UxM5t47997vO8eFJKhx77s6i3MezuG8r8NHuvE0WiyqXSK6R1TTIoIVHRWR01b03JaOuud8Jme66B0IOkX0WGuD1+yoxVoLgOu6xBYevgxGrMjenWubcrMAV/OlTityKptOVb8rhTz632forY8VZX5tJe2ZudTXzaFvYMK3Vnp+2tg6A3Eu9b9bJCLXl2aqWsaKAVfzBZprU2zuaEFR7jwrcndwnA3ZRjKN1Vy793rYWlm/b1v2XwC3HMW7275JtUxMRVzpHyMoRexa30p9TSUNNVVsWtFEpaP89XCM8amIjrbaFj+Mdk9v4AblpDvlKvcGJwjLMYlYxqdieu+PcvtpAQf4rr2RiZLP34NvqKvx8MO4+yNAnHFQXhQmMdYSm5gjuX5cR1i+cB6TQcLQ6xLWCC9GiniuSymMMtMALwgjVMEoxCZCRVGFdUvTFEsRRy/+Qzk2KGAcQR3FD+OZL3h+GL+KrV2SqZvD5FSAiEFE2H/8JgA2MaCCojSnGwijhCCMXs2cUAqjM8MFnxVt80g5HwbUCod/XMOhH1ZjxGBUcNSyKtvEk/+KBOX4zAzAD+Ozv/cNDnsubF65gJTnYEzC+d4BLvz5+EOTJGxa/S2pCpeTVx4MB+Xk7CdG6vnlj04jcurnrcuqEyv05V8yNFpEjJBpqmVtewbPq+DgyVu+Fem5/uvO3Cwrbz9wqdOKHNuxYUlztrWeqsoKAMKyIf+8wInL+RER3Xvrt67cF7MA8P3+3GIr2iUie6yVtIhiRUZF9bSInrt7vHtWmL6+3gNJmH43sU/UdQAAAABJRU5ErkJggg==);
+}
+
+.dj_ie6 .HelpTextTrigger, .dj_ie7 .HelpTextTrigger {
+    background-image : url(HelpText/widget/ui/images/help.png);
+}
+
+
+.HelpTextTriggerDown {
+	background-image : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9oDDAw0DMmBFjkAAAJZSURBVDjLxZO9T5NRFMZ/b8tLKV9NG0ihYEToYCTGDcVoYjTsJk0cDMjiYiKJs/+EA4srUIlLB51MHBk0qPhBNIqgKbGllQKlvOVt3957j0OhapDZO53c5PzOOXmeB/73s/71+X6rOCTITSPcEpEeA4hITovMAvOj0a61YwFLhZ2EiEx3BwO9RkCLAOC3LLQIaae8oY1MjfX3pI4AFn9uJYCZ3tZgm1NTpJ0y+UoVESHUbHOyvY1ws83yzm7ZCJPXB/pSDcCLfGHQwMKJtmBsu+qxVCgSDtiMdEcA+LK7x2rJYTgcorslwJvCTlaLXPYdAlytx6MtgVjJUyxubuMoxVgsSsi2Cdk2I10RLCw+bBfZ82rEO9tj+0qNNwAVbSYsy2K15OAqjRZht1ZjaavIp2IJgHORECVPsVJy6LSbcJWeaACqWvcB5NwKBlDGkFxdB2Cwsx1HKXJuBSWGzL6LZVmUle5rOgSUlQZAEDxtEOT31Jri0VqaijYH0hl89bNpAFylM8qYeCTQTMlTHEr44ONXoF6LCAaItbZQ0QZX6UzjhH2l5vJulXhHO36fhWcMWoS7Z+LcOT2EPmgGGA6H+O6U2Vdq7k8Vkgv5zazfZ3GhO4Ltqxvn2Y8cz7P5+hZGuBTtwm9ZPElnsp4xyb+MdP/1ckIbmblxqr9Ni/Buu0im7KJF6G0NcjYcwvZZPPz8raxFJpNXzqeOWPney7eJmpHpsVi0d6CjlaDff7ghK7sOT9ezG8qYqcdXR1PHhun2wqshLfUwaZEeEUGL5AzMapH51LWLjTD9Aq8qWrCvKT0UAAAAAElFTkSuQmCC);
+}
+
+.dj_ie6 .HelpTextTriggerDown, .dj_ie7 .HelpTextTriggerDown {
+    background-image : url(HelpText/widget/ui/images/help_down.png);
+}
+
+.HelpTextTrigger, .HelpTextTriggerDown  {
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height:16px;
+	width:16px;	
+	float: left;
+	margin-right: 5px;
+}
+
+.HelpTextButton {
+	background-image : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9oDDAw0HaMxNssAAAKiSURBVDjLxZNNaFRnFIafe3MnERJMTFIzyQgxahkwggYURbRuKiKIKEGEaEwL3XThRly7EBELrip04UL8Q0SZRReioCUtahDRNuKo8a+xqebH0UxM5t47997vO8eFJKhx77s6i3MezuG8r8NHuvE0WiyqXSK6R1TTIoIVHRWR01b03JaOuud8Jme66B0IOkX0WGuD1+yoxVoLgOu6xBYevgxGrMjenWubcrMAV/OlTityKptOVb8rhTz632forY8VZX5tJe2ZudTXzaFvYMK3Vnp+2tg6A3Eu9b9bJCLXl2aqWsaKAVfzBZprU2zuaEFR7jwrcndwnA3ZRjKN1Vy793rYWlm/b1v2XwC3HMW7275JtUxMRVzpHyMoRexa30p9TSUNNVVsWtFEpaP89XCM8amIjrbaFj+Mdk9v4AblpDvlKvcGJwjLMYlYxqdieu+PcvtpAQf4rr2RiZLP34NvqKvx8MO4+yNAnHFQXhQmMdYSm5gjuX5cR1i+cB6TQcLQ6xLWCC9GiniuSymMMtMALwgjVMEoxCZCRVGFdUvTFEsRRy/+Qzk2KGAcQR3FD+OZL3h+GL+KrV2SqZvD5FSAiEFE2H/8JgA2MaCCojSnGwijhCCMXs2cUAqjM8MFnxVt80g5HwbUCod/XMOhH1ZjxGBUcNSyKtvEk/+KBOX4zAzAD+Ozv/cNDnsubF65gJTnYEzC+d4BLvz5+EOTJGxa/S2pCpeTVx4MB+Xk7CdG6vnlj04jcurnrcuqEyv05V8yNFpEjJBpqmVtewbPq+DgyVu+Fem5/uvO3Cwrbz9wqdOKHNuxYUlztrWeqsoKAMKyIf+8wInL+RER3Xvrt67cF7MA8P3+3GIr2iUie6yVtIhiRUZF9bSInrt7vHtWmL6+3gNJmH43sU/UdQAAAABJRU5ErkJggg==);
+	background-repeat: no-repeat;			
+	cursor: pointer;
+	height:16px;
+	width:16px;	
+}
+
+.dj_ie6 .HelpTextButton, .dj_ie7 .HelpTextButton {
+    background-image : url(HelpText/widget/ui/images/help.png);
+}
+
+
+.HelpTextBox {
+	/*required properties: */
+	display : none;
+	position: absolute;
+	text-align: left;
+	overflow : auto;
+	overflow-x : hidden;
+	overflow-y : auto;
+	z-index : 10000;
+}
+
+.HelpTextBox, .HelpTextRow {
+	padding: 3px; 
+	border: 1px solid #FF8C19; 
+	-moz-border-radius:3px 3px 3px 3px; 
+	border-radius: 3px;
+	-webkit-border-radius:3px; 
+	background: #FFF;
+	cursor: default;
+}
+
+.HelpTextRow {
+	background-image : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9oDDAw0HaMxNssAAAKiSURBVDjLxZNNaFRnFIafe3MnERJMTFIzyQgxahkwggYURbRuKiKIKEGEaEwL3XThRly7EBELrip04UL8Q0SZRReioCUtahDRNuKo8a+xqebH0UxM5t47997vO8eFJKhx77s6i3MezuG8r8NHuvE0WiyqXSK6R1TTIoIVHRWR01b03JaOuud8Jme66B0IOkX0WGuD1+yoxVoLgOu6xBYevgxGrMjenWubcrMAV/OlTityKptOVb8rhTz632forY8VZX5tJe2ZudTXzaFvYMK3Vnp+2tg6A3Eu9b9bJCLXl2aqWsaKAVfzBZprU2zuaEFR7jwrcndwnA3ZRjKN1Vy793rYWlm/b1v2XwC3HMW7275JtUxMRVzpHyMoRexa30p9TSUNNVVsWtFEpaP89XCM8amIjrbaFj+Mdk9v4AblpDvlKvcGJwjLMYlYxqdieu+PcvtpAQf4rr2RiZLP34NvqKvx8MO4+yNAnHFQXhQmMdYSm5gjuX5cR1i+cB6TQcLQ6xLWCC9GiniuSymMMtMALwgjVMEoxCZCRVGFdUvTFEsRRy/+Qzk2KGAcQR3FD+OZL3h+GL+KrV2SqZvD5FSAiEFE2H/8JgA2MaCCojSnGwijhCCMXs2cUAqjM8MFnxVt80g5HwbUCod/XMOhH1ZjxGBUcNSyKtvEk/+KBOX4zAzAD+Ozv/cNDnsubF65gJTnYEzC+d4BLvz5+EOTJGxa/S2pCpeTVx4MB+Xk7CdG6vnlj04jcurnrcuqEyv05V8yNFpEjJBpqmVtewbPq+DgyVu+Fem5/uvO3Cwrbz9wqdOKHNuxYUlztrWeqsoKAMKyIf+8wInL+RER3Xvrt67cF7MA8P3+3GIr2iUie6yVtIhiRUZF9bSInrt7vHtWmL6+3gNJmH43sU/UdQAAAABJRU5ErkJggg==);
+	background-repeat: no-repeat;
+	background-position: 5 5;
+	padding-left: 30px;
+	height: auto;
+	width: auto;
+	overflow-x : hidden;
+	overflow-y : auto;
+}
+
+.dj_ie6 .HelpTextRow, .dj_ie7 .HelpTextRow {
+    background-image : url(HelpText/widget/ui/images/help.png);
+}
+
+.HelpTextTriggerLabel {
+	cursor: pointer;
+}

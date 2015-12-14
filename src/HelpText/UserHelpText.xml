@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<widget xmlns="http://www.mendix.com/widget/1.0/" id="HelpText.widget.UserHelpText" needsEntityContext="true">
+  <name>User help Text Viewer</name>
+  <description>Displays a help text. Might be toggled by the Help Text Trigger</description>
+  <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAACXBIWXMAAAsTAAALEwEAmpwYAAACLElEQVR4nGL8z4AfAAAAAP//YoExbij/j/oX91/iH8PfF/8W/VtmehciDgAAAP//YoSYcCX4/2QRSQaGvwwMDEwMfxgePf+Xa7eWgYGBAQAAAP//YvzPwMBwMfjvQmnuzwyPGF4x/GMQYJBjEGC4+vVfvOdaBgYAAAAA//9i/M9wRunfYVmpdwwXGAQYzBgYGG4y3GbQYRBlOPfsr23oPQAAAAD//2JiYPgZIy71meEMw1cGZwZeBl4GEwZmhksMnxlUpL7HMDAAAAAA//9iYmD4EcvMcJfhB8Nfhk8M5xluMDAw6DF8ZrjNwMPwLZaBAQAAAP//BMHBDQAQEACwYox72t1ochO4h0i0nQrScy3NdKRnGyr4AAAA//8EwQEKABAUBbAp53FsF1R+Up6tUyKuJ4ZlOmjY+AAAAP//BMGxEQAQEACwFCZQqm1sRhMoXvHnJY3YObujPAupMFyx+QAAAP//YmJg+Lb4NYMKAxPDb4a/DBkMaQx/Gf4x/GfQZHjI8GMxAwMAAAD//2JiYPi+5NAzJgZzBhaGPwy7GfYyMDD8Z7BiYGHY8uzHEgYGAAAAAP//YvzPwMDQHPx3YRD3X4ZLDM8Z/jBIMOgysDDM+fovfuZaBgYAAAAA//+CBnV58L/JzpLyDGwMDAw/GW4zbH7+L3feWgYGBgYAAAAA//9ihMVmrvLfqH9x/yT+Mfx98X/Rv2WLoJEFAAAA//9iJBTdAAAAAP//AwBVopl/DSt8QwAAAABJRU5ErkJggg==</icon>
+  <properties>
+    <property defaultValue="false" key="startvisible" type="boolean">
+      <caption>Always Visible</caption>
+      <category>Behavior</category>
+      <description>If true, the button will be always visible, if false, the button will only be visible when Help Texts are triggered.</description>
+    </property>
+    <property defaultValue="true" key="showonhover" type="boolean">
+      <caption>Show on hover</caption>
+      <category>Behavior</category>
+      <description>Show the help text when the mouse hovers over the button</description>
+    </property>
+    <property defaultValue="false" key="closeClick" type="boolean">
+      <caption>Close on click</caption>
+      <category>Behavior</category>
+      <description>Closes the button when clicking anywhere on the page</description>
+    </property>
+    <property defaultValue="300" key="width" type="integer">
+      <caption>Width</caption>
+      <category>Common</category>
+      <description>Width of the help box in pixels</description>
+    </property>
+    <property defaultValue="300" key="height" type="integer">
+      <caption>Height</caption>
+      <category>Common</category>
+      <description>Maximum height of the help box in pixels</description>
+    </property>
+    <property defaultValue="popup" key="position" type="enumeration">
+      <caption>Positioning</caption>
+      <category>Common</category>
+      <description>As popup - Item is rendered on top of all content (left / right is determined automatically)
+        Left aligned - Item is rendered on the left of the help button
+        Right aligned - Item is rendered on the right of the help button
+        
+        Use left or right when the helptext should be hidden if the button is hidden (For example when using in combination with tab control). Use popup if the helptext should be visible outside the current form. See the screenshots for examples.</description>
+      <enumerationValues>
+        <enumerationValue key="popup">Popup</enumerationValue>
+        <enumerationValue key="left">Left</enumerationValue>
+        <enumerationValue key="right">Right</enumerationValue>
+      </enumerationValues>
+    </property>
+    <property key="editorrole" required="false" type="string">
+      <caption>Editor role</caption>
+      <category>Edit</category>
+      <description>Role that is required to edit the text. Must be a role on Project level, not on module.</description>
+    </property>
+    <property key="helptextentity" type="entity">
+      <caption>Help text entity</caption>
+      <category>Edit</category>
+      <description>Entity to store helptexts</description>
+    </property>
+    <property entityProperty="helptextentity" key="keyattr" type="attribute">
+      <caption>Key attribute</caption>
+      <category>Edit</category>
+      <description>Key attribute</description>
+      <attributeTypes>
+        <attributeType name="String"/>
+      </attributeTypes>
+    </property>
+    <property entityProperty="helptextentity" key="textattr" type="attribute">
+      <caption>Text attribute</caption>
+      <category>Edit</category>
+      <description>Text attribute</description>
+      <attributeTypes>
+        <attributeType name="String"/>
+      </attributeTypes>
+    </property>
+    <property entityProperty="helptextentity" key="langattr" type="attribute">
+      <caption>Language attribute</caption>
+      <category>Edit</category>
+      <description>Language attribute</description>
+      <attributeTypes>
+        <attributeType name="String"/>
+      </attributeTypes>
+    </property>
+    <property key="itemkey" type="string">
+      <caption>Key</caption>
+      <category>Edit</category>
+      <description>Application wide unique key to identify this help item</description>
+    </property>
+  </properties>
+</widget>

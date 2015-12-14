@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="HelpText.widget.HelpTextAttr" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>Attribute based Help Text Viewer</name>
+  <description>Displays a help text, based on an attribute. Might be toggled by the Help Text Trigger</description>
+
+  <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB9sGAwoSNH0PHbIAAAJtSURBVDjL
+pZPfS5NhFMc/77tNpzO3+WOyZpniNN+IGXkTGOtCCOmuvBnhnUGQf0D+BRV0HXYd7K67LooI8qZA
+LHzFveIP0pREfdvmnJv79b6nC3M4pasOnAfOwzmfc/g+51FEhP8x59mLQlnYy9qyk6lQKNvYtuBU
+Ieh1EPS5lMZ6tSZfOT2BmbXmlndKN4NeB4pYWJYFgKqqlCz4sVsg0uWhs7VeOQfYO6ikFrYK/t6A
+k8zhEUtbOTaTOSxbCHjruBZqpsXnZnY1w/BVP1cCjUoVkC/ZfFk5lJ6Ai910no+LJkGvi9EbFxGE
+ubU039ZTRPvbCLV5+LqcYuxWSPF6XKgAP82CBH0O9rNF3s/vkj8s8vB2Fy1NdbQ21XN3sIM6RZgx
+dklli/QFPSxspKUq4sp2joFQA7Pr+xwVSli2TSpbQt9I43E7CKgpxq6f6G3CXwVmZpbECZDMHKGE
+3GyYB1Qsi7JV5vnbee4NXSKgZmgNdtPhb6hR3zRNTNM8niBfKCICFYFSpYjYggh0NWRpar9cLTYM
+A13XARgZGTl+oeNDKFkWIZ8bRVTEFiajfjRN43J7U03nWCxWE6sA/Z0X2DZzDHb7cSkweacFTdNI
+HhSYmh5nanq8WmAYBpFIpBYw2ON/8Vn/hVOFieFmNE0D4GX8EeFwL+FwL1PT42iaVvUaQGuz++n9
+4W5ev1tE13UMwzi38yeQ0yJWAQBDfe3KxOgAH7baqpBnj9+wurp2DnYiZjQaVZSzv3E7mZNP3zdx
+/p4nEomgaVq185MHrzgwt9B1nVgsdrwNIvJPj8fjkkgk5MQSiYTE43E5nfMH78895+GaEJQAAAAA
+SUVORK5CYII=</icon>
+
+  <properties>
+	<property key="name" type="attribute" required="true" isPath="optional" pathType="reference">
+        <caption>Help text</caption>
+        <category>Behavior</category>
+        <description>The help text which will be displayed when the user clicks or hovers the Help Text Viewer</description>
+        <attributeTypes>
+            <attributeType name="String"/>                
+        </attributeTypes>      
+    </property>
+    <property key="startvisible" type="boolean" defaultValue="false">
+      <caption>Always Visible</caption>
+      <category>Behavior</category>
+      <description>If true, the button will be always visible, if false, the button will only be visible when Help Texts are triggered. </description>
+    </property>
+		
+    <property key="showonhover" type="boolean" defaultValue="true">
+      <caption>Show on hover</caption>
+      <category>Behavior</category>
+      <description>Show the help text when the mouse hovers over the button</description>
+    </property>
+	<property key="closeClick" type="boolean" defaultValue="false">
+      <caption>Close on click</caption>
+      <category>Behavior</category>
+      <description>Closes the button when clicking anywhere on the page</description>
+    </property>
+		<property key="width" type="integer" defaultValue="300">
+      <caption>Width</caption>
+      <category>Common</category>
+      <description>Width of the help box in pixels</description>
+    </property>
+		<property key="height" type="integer" defaultValue="300">
+      <caption>Height</caption>
+      <category>Common</category>
+      <description>Maximum height of the help box in pixels</description>
+    </property>
+    <property key="position" type="enumeration" required="true" defaultValue="popup">
+        <caption>Positioning</caption>
+        <category>Common</category>
+        <description>
+        As popup - Item is rendered on top of all content (left / right is determined automatically)
+        Left aligned - Item is rendered on the left of the help button
+        Right aligned - Item is rendered on the right of the help button
+        
+        Use left or right when the helptext should be hidden if the button is hidden (For example when using in combination with tab control). Use popup if the helptext should be visible outside the current form. See the screenshots for examples.
+        </description>
+        <enumerationValues>
+            <enumerationValue key="popup">Popup</enumerationValue>
+            <enumerationValue key="left">Left</enumerationValue>
+            <enumerationValue key="right">Right</enumerationValue>
+        </enumerationValues>    
+    </property>      
+  </properties>
+</widget>
+

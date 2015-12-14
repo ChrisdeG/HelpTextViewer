@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://www.mendix.com/package/1.0/">
+	<clientModule name="Help Text Widgets" version="2.0" xmlns="http://www.mendix.com/clientModule/1.0/">
+		<widgetFiles>
+			<widgetFile path="HelpText/HelpText.xml"/>
+			<widgetFile path="HelpText/HelpTextRow.xml"/>
+			<widgetFile path="HelpText/HelpTextTrigger.xml"/>
+            <widgetFile path="HelpText/HelpTextAttr.xml"/>
+            <widgetFile path="HelpText/HelpTextRowAttr.xml"/>
+			<widgetFile path="HelpText/UserHelpText.xml"/>			
+		</widgetFiles>
+		<files>
+			<file path="HelpText/widget/"/>
+		</files>
+	</clientModule>
+</package>

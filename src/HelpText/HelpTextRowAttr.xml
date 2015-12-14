@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="HelpText.widget.HelpTextRowAttr" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>Dynamic Row based Help Text Viewer</name>
+  <description>Displays a help text in a form row. The actual text depends on the value of an attribute.</description>
+
+  <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB9sGAwoSNH0PHbIAAAJtSURBVDjL
+pZPfS5NhFMc/77tNpzO3+WOyZpniNN+IGXkTGOtCCOmuvBnhnUGQf0D+BRV0HXYd7K67LooI8qZA
+LHzFveIP0pREfdvmnJv79b6nC3M4pasOnAfOwzmfc/g+51FEhP8x59mLQlnYy9qyk6lQKNvYtuBU
+Ieh1EPS5lMZ6tSZfOT2BmbXmlndKN4NeB4pYWJYFgKqqlCz4sVsg0uWhs7VeOQfYO6ikFrYK/t6A
+k8zhEUtbOTaTOSxbCHjruBZqpsXnZnY1w/BVP1cCjUoVkC/ZfFk5lJ6Ai910no+LJkGvi9EbFxGE
+ubU039ZTRPvbCLV5+LqcYuxWSPF6XKgAP82CBH0O9rNF3s/vkj8s8vB2Fy1NdbQ21XN3sIM6RZgx
+dklli/QFPSxspKUq4sp2joFQA7Pr+xwVSli2TSpbQt9I43E7CKgpxq6f6G3CXwVmZpbECZDMHKGE
+3GyYB1Qsi7JV5vnbee4NXSKgZmgNdtPhb6hR3zRNTNM8niBfKCICFYFSpYjYggh0NWRpar9cLTYM
+A13XARgZGTl+oeNDKFkWIZ8bRVTEFiajfjRN43J7U03nWCxWE6sA/Z0X2DZzDHb7cSkweacFTdNI
+HhSYmh5nanq8WmAYBpFIpBYw2ON/8Vn/hVOFieFmNE0D4GX8EeFwL+FwL1PT42iaVvUaQGuz++n9
+4W5ev1tE13UMwzi38yeQ0yJWAQBDfe3KxOgAH7baqpBnj9+wurp2DnYiZjQaVZSzv3E7mZNP3zdx
+/p4nEomgaVq185MHrzgwt9B1nVgsdrwNIvJPj8fjkkgk5MQSiYTE43E5nfMH78895+GaEJQAAAAA
+SUVORK5CYII=</icon>
+
+  <properties>
+	<property key="name" type="attribute" required="true" isPath="optional" pathType="reference">
+        <caption>Help text attribute</caption>
+        <category>Data source</category>
+        <description>The help text which will be displayed when the user clicks or hovers the Help Text Viewer</description>
+        <attributeTypes>
+            <attributeType name="String"/>                
+        </attributeTypes>      
+    </property>
+    <property key="startvisible" type="boolean" defaultValue="false">
+      <caption>Start Visible</caption>
+      <category>Behavior</category>
+      <description>If true, the row will start visible. If false, the help text will be visible once the Help Texts are triggered.</description>
+    </property>
+    <property key="hideonclick" type="boolean" defaultValue="false">
+      <caption>Hide on click</caption>
+      <category>Behavior</category>
+      <description>If true, the row will fade away when clicked (Clicking the Help Text Trigger will restore the help text after hiding).</description>
+    </property>		
+		<property key="height" type="integer" defaultValue="300">
+      <caption>Height</caption>
+      <category>Common</category>
+      <description>Maximum height of the help box in pixels</description>
+    </property>
+    <property key="mfEntity" type="entity" required="false">
+      <caption>Microflow entity</caption>
+      <category>Data source</category>
+      <description>Should match the entity of the enclosing Dataview.</description>
+    </property>
+    <property key="onclickmf" type="microflow" required="false" entityProperty="mfEntity">
+      <caption>Microflow</caption>
+      <category>Behavior</category>
+      <description>The microflow to be executed.</description>
+      <returnType type="Void"/>
+    </property> 
+  </properties>
+</widget>
+
